@@ -1,12 +1,14 @@
-import './App.css'
-import Header from './Components/AreaCliente/header.tsx'
+import React from 'react';
+//import AreaOficina from './pages/AreaOficina';
+import AreaCliente from './pages/AreaCliente';
+import './ui/styles/App.css';
 
-function App() {
-  return (
-  <>
-    <Header />
-  </>
-  )
-}
+const App: React.FC = () => {
+    return (
+        <div className="App">
+            <AreaCliente />
+        </div>
+    );
+};
 
-export default App
+export default App;
