@@ -7,33 +7,11 @@ import agendamentoIcon from '../images/calendario.png';
 import agendamentoButton from '../images/sinal_mais.png';
 import divisoria from '../images/Line.png';
 import usuarioIcon from '../images/boneco.png'
-import lupaIcon from '../images/lupa.png'
 
 const AreaCliente = () => {
     return (       
 
-    <div className="area-cliente">
-
-        <div className="header-container">
-
-            <div className="header-right">
-                <a href="#">Desconectar</a>
-            </div>
-
-            <div className="header-center">
-
-                <div className="search-bar">
-                    <input type="text" placeholder="Pesquisar" />
-                    <button><img src={lupaIcon} alt="Search" /></button>
-                </div>
-
-                <div className="header-links">
-                    <a href="#">Recomendações</a>
-                    <a href="#">Suporte</a>
-                    <a href="#">InovoTech</a>
-                </div>
-
-            </div>       
+    <div className="area-cliente">  
         
         <div className="banner-container">
             
@@ -136,7 +114,6 @@ const AreaCliente = () => {
             </div>
 
         </div>
-    </div>
     </div>
     )    
 };
