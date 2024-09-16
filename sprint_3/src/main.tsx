@@ -1,12 +1,10 @@
-import { createElement, StrictMode } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App'
+import App from './App.tsx'
+import './ui/styles/index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
   </StrictMode>,
 )
-
-createElement('div', { className: 'flex flex-col pb-8 bg-sky-300' }, [])

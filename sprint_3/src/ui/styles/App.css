@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+/* XS */
+@media (max-width: 575.98px) {
+  .App {
+    font-size: 12px;
+  }
+}
+
+/* SM */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .App {
+    font-size: 14px;
+  }
+}
+
+/*  MD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .App {
+    font-size: 16px;
+  }
+}
+
+/* LG */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .App {
+    font-size: 18px;
+  }
+}
+
+/* XL */
+@media (min-width: 1200px) {
+  .App {
+    font-size: 20px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+

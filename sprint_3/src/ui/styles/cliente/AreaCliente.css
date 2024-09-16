@@ -1,0 +1,966 @@
+.area-cliente {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+
+.header-container {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.header-links a {
+    font-size: 13px;
+    color: #406C76;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre a barra de pesquisa e os links */
+}
+
+.header-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 10px;
+}
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .header-left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Garante que o "Desconectar" fique à esquerda */
+      margin-left: 20px; /* Ajuste conforme necessário */
+    }
+    
+  
+  .header-left a {
+      color: #406C76;
+      text-decoration: none;
+      font-weight: 500;
+  }
+
+  .header-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-top: 1px solid #ADD8E6;
+    padding-top: 5px;
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-bottom {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        border-top: 1px solid #ADD8E6;
+        padding-top: 5px;
+      }
+
+
+      .search-bar button {
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+    
+      .search-bar button img {
+        width: 20px;
+        height: 20px;
+        margin-right: px;
+      }
+    
+    
+        .search-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 10px;
+        }
+
+.search-bar {
+display: flex;
+align-items: center;
+background-color: transparent;
+padding: 5px;
+border-radius: 50px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+          
+          .search-bar input {
+            border: none;
+            background-color: transparent;
+            padding: 10px;
+            width: 200px;
+            outline: none;
+          }
+          
+          .search-btn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            padding: 10px;
+          }
+
+              .nav-link {
+    color: #5A5A5A;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #1C83E7;
+  }
+
+    .nav-link {
+    color: #5A5A5A;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+    color: #1C83E7;
+    }
+
+    .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #406C76;
+    font-weight: 500;
+}
+    
+
+.banner-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-image: url('../../src/images/1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.circulo-container {
+    position: absolute; /* Fixa a posição */
+    top: 47%; /* Centraliza verticalmente */
+    left: 49.7%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Mantém o centro mesmo com o tamanho */
+    width: 22vw; /* Tamanho fixo para o círculo */
+    height: 46vh;
+    border-radius: 50%;
+    background-color: #fff;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.circulo {
+    position: relative;
+    width: 340px; /* Ajuste conforme o tamanho necessário */
+    height: 340px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    pointer-events: auto; 
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info img {
+    width: 50%; /* Defina o tamanho da imagem de forma responsiva */
+    margin-bottom: 15px;
+}
+
+.user-info h3 {
+    font-size: 1.2rem;
+    color: #406C76;
+    margin-bottom: 20px;
+    pointer-events: auto;
+}
+
+.diagnosticar-btn {
+    display: flex; /* Flexbox para centralizar o texto */
+    justify-content: center;
+    align-items: center;
+    width: 250px; /* Largura do botão Diagnosticar Problema */
+    height: 50px; /* Altura fixa */
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px;
+    border: none; /* Sem borda */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #596c7a; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    font-size: 1rem; /* Tamanho de fonte fixo */
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Esconde texto que ultrapassar */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto ultrapassar */
+    pointer-events: auto;
+}
+
+/* Botão Cadastrar novo veículo */
+.cadastrar-btn {
+    display: flex; /* Flexbox para centralizar o texto */
+    justify-content: center;
+    align-items: center;
+    width: 180px; /* Largura do botão Cadastrar novo veículo */
+    height: 50px; /* Altura fixa */
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px; /* Curvatura do botão */
+    border: 2px solid #596c7a; /* Borda do botão */
+    background-color: white; /* Cor de fundo do botão */
+    color: #596c7a; /* Cor do texto */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Tamanho de fonte fixo */
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Esconde texto que ultrapassar */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto ultrapassar */
+    pointer-events: auto;
+}
+
+.diagnosticar-btn {
+    background-color: #596c7a;
+    color: white;
+}
+
+.cadastrar-btn {
+    background-color: white;
+    color: #596c7a;
+    border: 2px solid #596c7a;
+}
+
+.conteudo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+.logout-btn {
+  font-size: 1rem;
+  color: #5A5A5A;
+  cursor: pointer;
+  padding: 5px;
+}
+
+ 
+  
+  .logout-btn {
+    font-size: 1rem;
+    color: #5A5A5A;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  
+  
+
+  
+  .nav-link {
+    color: #5A5A5A;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #1C83E7;
+  }
+
+    .nav-link {
+    color: #5A5A5A;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+    color: #1C83E7;
+    }
+
+
+.pesquisar input {
+    width: 200px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pesquisar img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #406C76;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #2b4b5b;
+}
+    
+  /* Texto dentro do Banner */
+  .cliente-banner1 h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 50px; /* Espaço no topo para ajuste do texto */
+}
+  
+  /* Banner Secundário */
+  .cliente-banner2 {
+    background-image: url('../../src/images/2.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 2;
+}
+
+.cliente-banner4 {
+    background-image: url('../../src/images/4.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 1%;
+    left: 70%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 4;
+}
+
+.cliente-banner5 {
+    background-image: url('../../src/images/5.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 32vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: -1.5%;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 5;
+}
+
+.cliente-banner6 {
+    background-image: url('../../src/images/6.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 0.4%;
+    left: 81%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 6;
+}
+
+.cliente-banner7 {
+    background-image: url('../../src/images/7.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 0.4%;
+    left: 122%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 7;
+}
+
+.cliente-banner8 {
+    background-image: url('../../src/images/8.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    opacity: 70%;
+    width: 100%;
+    height: 30vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 0.4%;
+    left: 114.6%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 8;
+}
+
+.cliente-banner9 {
+    background-image: url('../../src/images/9.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 0.5%;
+    left: 129.3%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 9;
+}
+
+.cliente-banner10 {
+    background-image: url('../../src/images/10.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 19vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 0.4%;
+    left: 76.2%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 10;
+}
+
+.cliente-banner11 {
+    background-image: url('../../src/images/11.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 47vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 0.4%;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 11;
+}
+
+.cliente-banner12 {
+    background-image: url('../../src/images/12.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 65%;
+    left: 65%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 12;
+}
+
+.cliente-banner13 {
+    background-image: url('../../src/images/13.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 6vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 81.5%;
+    left: 53%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 13;
+}
+
+.cliente-banner14 {
+    background-image: url('../../src/images/14.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 9vh; /* Ajuste conforme necessário */
+    position: absolute;
+    bottom: 65%;
+    left: 139%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 14;
+}
+
+.banner-container {
+    background-color: lightblue; /* Temporário para visualizar a área */
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.conteudo-secoes {
+    display: flex;
+    flex: 2; /* O container ocupa mais espaço */
+    gap: 30px; /* Gap geral menor entre as seções */
+}
+
+.area {
+    background-color: #fff;
+    padding: 40px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1; /* Flexível para ajuste proporcional */
+}
+
+
+.area-agendamentos {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;    
+    position: relative;
+    width: 31%;
+}
+
+.agendamentos-text {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-top: 12px; /* Garante que o texto fique em coluna */
+}
+
+.agendamentos-icon {
+    width: 80px;    
+    margin-right: 10px;
+    margin-bottom: 5px;    
+}
+
+.agendamentos-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    margin-bottom: 13px; /* Espaçamento entre o cabeçalho e os itens de agendamento */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.agendamentos-list {
+    max-height: 200px; /* Ajuste conforme necessário */
+    overflow-y: auto;
+    padding-right: 15px; /* Para evitar que a barra de rolagem sobreponha o conteúdo */
+}
+
+.agendamento-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(211, 226, 237, 0.55), rgba(227, 235, 242, 0.84), rgba(234, 238, 241, 0.61));
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 0.5px solid rgba(156, 177, 192, 0.5);   
+}
+
+.agendamento-item:hover {
+    background-image: linear-gradient(90deg, rgba(211, 226, 237, 1), rgba(227, 235, 242, 1), rgba(234, 238, 241, 1));
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.agendamento-btn {     
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;    
+    cursor: pointer;
+}
+
+.agendamentos-list::-webkit-scrollbar {
+    width: 12px;
+}
+
+.agendamentos-list::-webkit-scrollbar-thumb {
+    background-color: #C4CAD2;
+    border-radius: 10px;
+}
+
+.agendamentos-scroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .agendamentos-scroll::-webkit-scrollbar-thumb {
+    background-color: #C4CAD2;
+    border-radius: 10px;
+  }
+
+.area-garagem {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    margin-left: 50px;
+}
+
+.area-assinaturas {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 275px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    transition: all 0.3s ease;    
+}
+
+.area-diagnostico {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 245px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    margin-left: 70px;
+}
+
+.area-garagem:hover,
+.area-assinaturas:hover,
+.area-diagnostico:hover,
+.area-agendamentos:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.area-garagem img,
+.area-assinaturas img,
+.area-diagnostico img {
+    width: 80px; /* Ajustar o tamanho da imagem do ícone */
+    margin-bottom: 5px;
+}
+
+.area-garagem h4,
+.area-assinaturas h4,
+.area-diagnostico h4,
+.area-agendamentos h4 {
+    font-size: 1.2rem;    
+    margin-bottom: 8px;
+    color: #406C76;
+}
+
+.area-garagem p,
+.area-assinaturas p,
+.area-diagnostico p,
+.area-agendamentos p {
+    font-size: 0.7rem;
+    color: #20526D;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.separador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.visualizar-btn {
+    background-color: #fff;
+    border: 1px solid #406C76;
+    border-radius: 22px;
+    padding: 9px 9px;
+    font-size: 0.7rem;
+    color: #406C76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: -5px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.visualizar-btn-assinatura {
+    background-color: #fff;
+    border: 1px solid #406C76;
+    border-radius: 22px;
+    padding: 14px 17px;
+    font-size: 0.7rem;
+    color: #406C76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: -5px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.visualizar-btn-2 {
+    background-color: #596c7a;
+    border: 1px solid #596c7a;
+    border-radius: 20px;
+    padding: 14px 9px;
+    font-size: 0.8rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: -5px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.visualizar-btn img {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    margin-top: 6px;
+}
+
+.visualizar-btn span {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+}
+
+.visualizar-icon {
+    width: 20px;
+    height: 10px;
+    margin-right: 8px; /* Ajuste o espaçamento entre o ícone e o texto */
+}
+
+
+.area.assinaturas {
+    margin-right: 65px; /* Pequeno espaçamento à direita da Assinaturas */
+}
+
+.area.diagnostico {
+    margin-left: 85px;
+    margin-right: 30px; /* Espaçamento maior à esquerda do Diagnóstico */
+}
+
+.conteudo-agendamentos {
+    flex: 3;
+    margin-right: 70px; /* O agendamento vai ocupar menos espaço comparado às outras seções */
+}
+
+.conteudo-principal{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.area-item {
+    flex: 1; /* Cada item ocupa a mesma largura */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.cliente-garagem, .cliente-assinaturas, .cliente-diagnostico, .cliente-agendamentos {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.cliente-footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width: 1199px) {
+    /* LG - Tela grande */
+    .cliente-main-content {
+        flex-direction: column;
+    }
+    .cliente-banner {
+        padding: 35px;
+        font-size: 1.7rem;
+    }
+    .cliente-garagem,
+    .cliente-diagnostico,
+    .cliente-agendamentos,
+    .cliente-assinaturas {
+        flex-grow: 0.6;
+    }
+    .cliente-banner1 {
+        height: 400px; /* Aumenta a altura do banner em telas grandes */
+        background-size: cover;
+    }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    /* MD - Tela média */
+    .cliente-main-content {
+        flex-direction: column;
+    }
+
+    .cliente-garagem,
+    .cliente-diagnostico,
+    .cliente-agendamentos,
+    .cliente-assinaturas {
+        width: 100%;
+    }
+
+    .cliente-banner {
+        padding: 30px;
+        font-size: 1.5rem;
+    }
+
+    .cliente-garagem,
+    .cliente-diagnostico,
+    .cliente-agendamentos,
+    .cliente-assinaturas {
+        flex-grow: 0.7;
+    }
+    .cliente-banner1 {
+        height: 100vh;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    /* SM - Tela pequena */
+    .cliente-main-content {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .cliente-garagem,
+    .cliente-diagnostico,
+    .cliente-agendamentos,
+    .cliente-assinaturas {
+        margin-bottom: 20px;
+    }
+
+    .cliente-banner {
+        padding: 25px;
+        font-size: 1.2rem;
+    }
+
+    .cliente-garagem,
+    .cliente-diagnostico,
+    .cliente-agendamentos,
+    .cliente-assinaturas {
+        flex-grow: 0.8;
+    }
+    .cliente-banner1 {
+        height: 100vh; /* Expande para ocupar boa parte da tela */
+        background-size: contain;
+    }
+}
+
+
+
+
+
+@media (max-width: 576px) {
+    /* XS - Tela extra pequena */
+    .cliente-header,
+    .cliente-footer {
+        padding: 10px;
+    }
+
+    .cliente-main-content {
+        padding: 5px;
+    }
+
+    .cliente-garagem,
+    .cliente-diagnostico,
+    .cliente-agendamentos,
+    .cliente-assinaturas {
+        padding: 10px;
+        flex-grow: 1;
+    }
+
+    .cliente-banner {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    .cliente-banner1 {
+        height: 100vh; /* O banner ocupa quase toda a tela em dispositivos móveis */
+        background-size: cover;
+    }
+}
+
